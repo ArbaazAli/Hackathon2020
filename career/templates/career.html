@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block title %}<title>Career</title>{% endblock %}
+  {% block content %}
+    <!--==========================
+      Buy Ticket Section
+    ============================-->
+    <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header" style="margin-top: 20px;">
+          <h2>Career Path</h2>
+          <p>What is the major field after X<sup>th</sup> class.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h6 class="card-price text-center">Science</h6>
+                <h5 class="card-title text-muted text-uppercase text-center">The Usual Favorite</h5>
+                <hr>
+                Science is easily the most attractive stream and the one that almost every parent wants their child to opt for. The Science stream offers you many lucrative career options such as engineering, medical, IT and computer science and even research in a variety of domains. The biggest advantage of opting for science stream for Class 10 students is that it allows them to shift streams (Arts or Commerce) later on in their academic career. Simply put, a Science student can opt for any subject from Arts or Commerce stream, if they are not comfortable with courses or specialization offered in it at the graduation level. On the contrary, Arts or Commerce students do not enjoy this option and are not allowed to pick science subjects for under graduate courses.
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h6 class="card-price text-center">Commerce</h6>
+                <h5 class="card-title text-muted text-uppercase text-center">Best for Business</h5>
+                <hr>
+                Commerce is the second most popular stream among the Class 10 students as a career choice. If numbers, finances and economics are your forte, you must opt for Commerce Stream. As far as future career options are concerned, Commerce stream can lead you to some of the most lucrative and high paying jobs such as Chartered Accountants, Company Secretaries, Accountants, Investment Banking and Financial Advisors; although you will have to opt for professional courses in these respective domains post your Class 12.
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pro Tier -->
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-price text-center">Arts</h6>
+                <h5 class="card-title text-muted text-uppercase text-center">Off-beat & Exciting options</h5>
+                <hr>
+                Humanities or what is popularly known as the Arts stream is traditionally the least preferred option among Class 10 students but this perception is changing with time. Today, Arts stream has emerged as the widest study stream among all three, offering some interesting, off-beat and exciting career opportunities. Traditionally, the Arts stream was limited to students who were interested in academic research but this perception has changed in the last decade. Today, Arts students have a plethora of career options and most of them are equally lucrative and satisfying as the ones available through Science or Commerce streams. An Arts student can opt for career options like Journalism, Literature, Social Work, Teaching and many others.
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  {% endblock %} 

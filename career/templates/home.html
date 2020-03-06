@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block title %} <title>Career</title> {% endblock %}
+{% block content %}
+
+<section id="intro">
+  <div class="intro-container wow fadeIn">
+    <h1 class="mb-4 pb-0">The<br><span>Career Buddy</span> <br>Website</h1>
+    <!-- <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p> -->
+    <a href="https://www.youtube.com/watch?v=mz8fG1ZD18A" class="venobox play-btn mb-4" data-vbtype="video"
+      data-autoplay="true"></a>
+    <a href="#inp" class="about-btn scrollto">Get Started</a>
+  </div>
+</section>
+
+  <section id="subscribe">
+    <div style="margin-top: 10%;">
+
+    </div>
+  <div class="container wow fadeInUp">
+    <div class="section-header">
+      <h2>Tags Selector</h2>
+      <p>Select your favorite tags which define you the best.</p>
+    </div>
+<div class="col-auto" id="tags">
+    
+</div>
+      <div class="form-row justify-content-center">
+        <div class="col-auto">
+            <input list="browsers" id="inp" name="browser">
+            <datalist id="browsers">
+              <option value="Drama">
+              <option value="Acting">
+              <option value="Dancing">
+              <option value="Management">
+              <option value="Problem Solving">
+              <option value="Business">
+              <option value="Programming">
+              <option value="Team Player">
+              <option value="Decision Making">
+              <option value="Crytography">
+              <option value="Networking">
+              <option value="Linux">
+              <option value="Painting">
+              <option value="Sculpture">
+              <option value="Literature">
+              <option value="Finance">
+              <option value="Statistics">
+              <option value="Cooking">
+              <option value="Analysis">
+              <option value="Machine Learning">
+              <option value="Maths">
+              <option value="Animation">
+              <option value="UI/UX Designing">
+              <option value="Creativity">
+              <option value="Reasoning">
+              <option value="Legal Search">
+              <option value="Communication">
+              <option value="Critical Thinking">
+              <option value="Technical Skills">
+            </datalist>
+        </div>
+        <div class="col-auto">
+          <button onclick="myFunction()">Submit</button>
+        </div>
+      </div>
+      <form action="#" method="POST">{% csrf_token %}
+        <textarea name="selections" id="alltext" style="display: none;" ></textarea>
+          <button class="col-md-4 col-lg-2" style="margin-left: 40%; margin-top: 5%;">Get Started</button>
+    </form>
+
+  </div>
+</section>
+
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <script>
+        function myFunction(event) 
+        {
+          var t=document.getElementById("tags");
+          var btn = document.createElement("BUTTON");
+          btn.innerHTML = document.getElementById("inp").value;
+          t.appendChild(btn);
+          document.getElementById("alltext").value += btn.innerHTML +", ";
+          document.getElementById('inp').value = ''
+        }
+    </script>
+{% endblock %}    
