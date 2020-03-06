@@ -25,3 +25,6 @@ def roadmap(request):
 
 def career(request):
     return render(request, 'career.html')   
+
+def faq(request):
+    return render(request, 'faq.html')   
