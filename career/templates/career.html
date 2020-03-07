@@ -1,65 +1,165 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
+{% load static %}
 {% block title %}<title>Career</title>{% endblock %}
   {% block content %}
   {% block about %}{% endblock %}
     <!--==========================
       Buy Ticket Section
     ============================-->
-    <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+        <!--==========================
+      Role Model Section
+    ============================-->
+    <section style="margin-top: 20px;" id="buy-tickets" class="section-with-bg wow fadeInUp">
       <div class="container">
 
-        <div class="section-header" style="margin-top: 20px;">
-          <h2>Career Path</h2>
-          <p>What is the major field after X<sup>th</sup> class.</p>
+        <div class="section-header">
+          <h2>Successful Personalities</h2>
+          <p>You can get a vague idea of what they have achieved with their Career Choice.</p>
         </div>
-        
+
         <div class="row">
-          <div class="col-lg-4">
-            <div class="card mb-5 mb-lg-0">
-              <div class="card-body">
-                <h6 class="card-price text-center">Science</h6>
-                <h5 class="card-title text-muted text-uppercase text-center">The Usual Favorite</h5>
-                <hr>
-                Science is easily the most attractive stream and the one that almost every parent wants their child to opt for. The Science stream offers you many lucrative career options such as engineering, medical, IT and computer science and even research in a variety of domains. The biggest advantage of opting for science stream for Class 10 students is that it allows them to shift streams (Arts or Commerce) later on in their academic career. Simply put, a Science student can opt for any subject from Arts or Commerce stream, if they are not comfortable with courses or specialization offered in it at the graduation level. On the contrary, Arts or Commerce students do not enjoy this option and are not allowed to pick science subjects for under graduate courses.
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card mb-5 mb-lg-0">
-              <div class="card-body">
-                <h6 class="card-price text-center">Commerce</h6>
-                <h5 class="card-title text-muted text-uppercase text-center">Best for Business</h5>
-                <hr>
-                Commerce is the second most popular stream among the Class 10 students as a career choice. If numbers, finances and economics are your forte, you must opt for Commerce Stream. As far as future career options are concerned, Commerce stream can lead you to some of the most lucrative and high paying jobs such as Chartered Accountants, Company Secretaries, Accountants, Investment Banking and Financial Advisors; although you will have to opt for professional courses in these respective domains post your Class 12.
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Pro Tier -->
+
+
           <div class="col-lg-4">
             <div class="card">
+              <img class="card-img-top" src="{% static 'img/ratan.jpg' %}" alt="Card image cap">
               <div class="card-body">
-                <h6 class="card-price text-center">Arts</h6>
-                <h5 class="card-title text-muted text-uppercase text-center">Off-beat & Exciting options</h5>
+                  <h6 class="card-price text-center">Ratan Tata</h6>
+                <h5 class="card-title text-muted text-uppercase text-center">Ex-Chairman of Tata Group</h5>
                 <hr>
-                Humanities or what is popularly known as the Arts stream is traditionally the least preferred option among Class 10 students but this perception is changing with time. Today, Arts stream has emerged as the widest study stream among all three, offering some interesting, off-beat and exciting career opportunities. Traditionally, the Arts stream was limited to students who were interested in academic research but this perception has changed in the last decade. Today, Arts students have a plethora of career options and most of them are equally lucrative and satisfying as the ones available through Science or Commerce streams. An Arts student can opt for career options like Journalism, Literature, Social Work, Teaching and many others.
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
-                </div>
-
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Net Worth</strong> <br>1 billion USD</li>
+                  <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Bachelor's degree in Science</strong> <br>Cornell University</li>
+                  <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Advanced Management Degree</strong> <br>Harvard Business School</li>
+                </ul>
+                <hr>  
               </div>
             </div>
           </div>
-        </div>
 
+          <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'img/sundar.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                  <h6 class="card-price text-center">Sundar Pichai</h6>
+                <h5 class="card-title text-muted text-uppercase text-center">CEO of Alphabet & Google</h5>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Net Worth</strong> <br>610 million USD</li>
+                  <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Bachelor's Degree</strong> <br>IIT Kharagpur</li>
+                  <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Master's Degree</strong> <br>Stanford University(M.Sc) , Wharton School(MBA)</li>
+                </ul>
+                <hr>  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="{% static 'img/satya.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-price text-center">Satya Nadella</h6>
+                  <h5 class="card-title text-muted text-uppercase text-center">CEO of Microsoft</h5>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Net Worth</strong> <br>320 million USD</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Bachelor's Degree</strong> <br>Manipal Institute of Technology</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Master's Degree</strong> <br>University of Wisconsin-Milwaukee</li>
+                  </ul>
+                  <hr>  
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="{% static 'img/virat.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-price text-center">Virat Kohli</h6>
+                  <h5 class="card-title text-muted text-uppercase text-center">Captain of Indian Cricket Team</h5>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Net Worth</strong> <br>63 million USD</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>High School</strong> <br>Vishal Bharti Public School</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Achievements</strong> 
+                      <br><ul style="padding-left: 10px">
+                          <li style="margin-bottom: 0;">Wisden Cricketer of Year(2019)</li>
+                          <li style="margin-bottom: 0;">Padmashri (2017)</li>
+                          <li style="margin-bottom: 0;">Arjuna Award (2013)</li>
+                      </ul></li>
+                  </ul>
+                  <hr>  
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="{% static 'img/bachan.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-price text-center">Amitabh Bachchan</h6>
+                  <h5 class="card-title text-muted text-uppercase text-center">Famous Actor</h5>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Net Worth</strong> <br>400 million USD</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>School</strong> <br>Sherwood College</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>College</strong> <br>Kirori Mal College</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Achievements</strong>                         
+                      <br><ul style="padding-left: 10px ">
+                      <li style="margin-bottom: 0;">Dadasaheb Phalke Award (2019)</li>
+                      <li style="margin-bottom: 0;"> Filmfare Award (2010,2006,1992)</li>
+                      <li style="margin-bottom: 0;">Padmabhushan (2001)</li>
+                  </ul></li></li>
+
+                  </ul>
+                  <hr>  
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="{% static 'img/mukesh.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-price text-center">Mukesh Ambani</h6>
+                  <h5 class="card-title text-muted text-uppercase text-center">Chairman and Mg.Director of Reliance Industries</h5>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Net Worth</strong> <br>5,060 crores USD</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Bachelor's Degree</strong> <br>Institute of Chemical Technology</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Master's Degree</strong> <br>Stanford University(MBA)</li>
+                  </ul>
+                  <hr>  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="{% static 'img/gautam.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-price text-center">Gautam Adani</h6>
+                  <h5 class="card-title text-muted text-uppercase text-center">Chairman of Adani Group</h5>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Net Worth</strong> <br>1,190 crores USD</li>
+                    <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span><strong>Bachelor's Degree</strong> <br>Gujarat University (Dropped Out)</li>
+                  </ul>
+                  <hr>  
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+        </div>  
       </div>
+
+    </section>
 
   {% endblock %} 

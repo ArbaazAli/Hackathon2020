@@ -7,40 +7,12 @@
   {% block content %}
     <section class="intro">
         <div class="container">
-          <h1>Vertical Timeline &darr;</h1>
+          <h1>Career Roadmap &darr;</h1>
         </div>
       </section>
       
       <section class="timeline">
-        {% if Teacher %}
-        <ul>
-          <li>
-            <div>
-              <time>SSC</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero
-              eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>HSC Science</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et
-              bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>BE/BTech</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex
-              eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Teacher</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat
-              mattis. Vestibulum id magna est.
-            </div>
-          </li>
-        </ul>
-        {% endif %}
-        <ul>
+          <ul>
           <li>
             <div>
               <time>SSC</time>
@@ -49,21 +21,26 @@
               <a href="#art">Arts</a> <br>
             </div>
           </li>
+          {% if 'engineer' in key or 'doctor' in key or 'robotics' in key or 'cybersecurity' in key %}
           <li id="sci">
             <div >
-              <time >HSC Science</time> <strong>Duration : </strong>2 Years <br>
+              <time >HSC Science</time> 
               <a href="#bsc">Bachelor in Science</a> <br>
               <a href="#be">BE/BTech</a> <br>
               <a href="#mbbs">MBBS</a> <br>
             </div>
           </li>
+          {% endif %}
+          {% if 'manager' in key or 'accountant' in key %}
           <li id="comm">
             <div>
-              <time >HSC Commerce</time> <strong>Duration : </strong>2 Years <br>
+              <time >HSC Commerce</time>
               <a href="#bcom">BCom</a> <br>
               <a href="#bba">Bachelor of Business Administration</a> <br>
             </div>
           </li>
+          {% endif %}
+          {% if 'actor' in key or 'law' in key or 'hotelmanagment' in key%}
           <li id="art">
             <div>
               <time >HSC Arts</time>
@@ -72,6 +49,8 @@
               <a href="">Bachelor in Education</a> <br>
             </div>
           </li>
+          {% endif %}
+          {% if 'teacher' in key%}
           <li id="bsc">
             <div>
               <time>BSc</time> 
@@ -79,9 +58,10 @@
               <a href="#mds">Master of Dental Surgery</a> <br>
               <a href="#md">Doctor of Medicine</a> <br>
               <a href="#mba">Master of Business Adminstration</a>
-
             </div>
           </li>
+          {% endif %}
+          {% if 'engineer' in key%}
           <li id="be">
             <div>
               <time>BE / B-Tech</time> 
@@ -89,16 +69,17 @@
               <a href="#csit">Information Technology</a> <br>
               <a href="#elex">Electronics</a> <br>
               <a href="#extc">Electronics and Telecomm</a>
-
             </div>
           </li>
-
+          {% endif %}
+          {% if 'doctor' in key%}
           <li id="mbbs">
             <div>
               <time>MBBS </time> 
             </div>
           </li>
-
+          {% endif %}
+          {% if 'manager' in key%}
           <li id="bcom">
             <div>
               <time>Bcom</time> 
@@ -106,15 +87,18 @@
               <a href="#llb-c">Bachelor of Legislative Law</a> <br>
               <a href="#ca">Chartered Accountant</a> <br>
               <a href="bed-c">B-Ed</a>
-
             </div>
           </li>
+          {% endif %}
+          {% if 'manager' in key %}
           <li id="bba">
             <div>
               <time>BBA</time> 
               <a href="">MBA</a>
             </div>
           </li>
+          {% endif %}
+          {% if 'actor' in key%}
           <li id="ba">
             <div>
               <time>Bacchelor of Arts</time> 
@@ -122,9 +106,9 @@
               <a href="#ma">Masters of Art</a> <br>
               <a href="#med-a">M-Ed</a> <br>
               <a href="#mba-a">Master of Business Administration</a>
-              
             </div>
           </li>
+          {% endif %}
         </ul>
         
       </section>
