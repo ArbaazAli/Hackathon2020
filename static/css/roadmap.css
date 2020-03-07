@@ -171,3 +171,8 @@ time {
     border-color: transparent #F45B69 transparent transparent;
   }
 }
+
+.timeline ul li a {
+  text-decoration: none;
+  color: #F0E68C	;
+}

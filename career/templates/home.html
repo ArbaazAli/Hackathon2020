@@ -60,13 +60,13 @@
             </datalist>
         </div>
         <div class="col-auto">
-          <button onclick="myFunction()">Submit</button>
+          <button style="background-color: #e0e000; color: #000;" onclick="myFunction()">Select</button>
         </div>
       </div>
-      <form action="#" method="POST">{% csrf_token %}
+      <form action="{% url 'roadmap' %}" method="POST">{% csrf_token %}
         <textarea name="selections" id="alltext" style="display: none;" ></textarea>
         <div class="text-center">
-          <button class="col-md-4 col-lg-2" style="margin-top: 5%;">Get Started</button>
+          <button class="col-md-4 col-lg-2 about-btn scrollto" style="margin-top: 5%;">Generate Roadmap</button>
         </div> 
     </form>
 

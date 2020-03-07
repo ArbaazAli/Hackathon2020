@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block style%}<link rel="stylesheet" href="{% static 'css/roadmap.css' %}"> {% endblock %}
+{% block style%}<link rel="stylesheet" href="{% static 'css/roadmap.css' %}"> 
+{% endblock %}
 {% block title %}<title>Roadmap</title>{% endblock %}
   {% block content %}
     <section class="intro">
@@ -11,84 +12,124 @@
       </section>
       
       <section class="timeline">
+        {% if Teacher %}
         <ul>
           <li>
             <div>
-              <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero
+              <time>SSC</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero
               eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
             </div>
           </li>
           <li>
             <div>
-              <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et
+              <time>HSC Science</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et
               bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
             </div>
           </li>
           <li>
             <div>
-              <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex
+              <time>BE/BTech</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex
               eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
             </div>
           </li>
           <li>
             <div>
-              <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat
-              mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat
-              mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat
-              mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat
-              mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus,
-              euismod quis ante.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis,
-              quam dolor convallis enim, non dignissim ligula ipsum a turpis.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat
-              mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat
-              mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat
+              <time>Teacher</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat
               mattis. Vestibulum id magna est.
             </div>
           </li>
         </ul>
-      </section>
+        {% endif %}
+        <ul>
+          <li>
+            <div>
+              <time>SSC</time>
+              <a href="#sci">Science</a> <br>
+              <a href="#comm">Commerce</a> <br>
+              <a href="#art">Arts</a> <br>
+            </div>
+          </li>
+          <li id="sci">
+            <div >
+              <time >HSC Science</time> <strong>Duration : </strong>2 Years <br>
+              <a href="#bsc">Bachelor in Science</a> <br>
+              <a href="#be">BE/BTech</a> <br>
+              <a href="#mbbs">MBBS</a> <br>
+            </div>
+          </li>
+          <li id="comm">
+            <div>
+              <time >HSC Commerce</time> <strong>Duration : </strong>2 Years <br>
+              <a href="#bcom">BCom</a> <br>
+              <a href="#bba">Bachelor of Business Administration</a> <br>
+            </div>
+          </li>
+          <li id="art">
+            <div>
+              <time >HSC Arts</time>
+              <a href="#ba">Bachelor of Arts</a> <br>
+              <a href="#llb">Bachelor of Legislative Law</a> <br>
+              <a href="">Bachelor in Education</a> <br>
+            </div>
+          </li>
+          <li id="bsc">
+            <div>
+              <time>BSc</time> 
+              <a href="#msc">Master in Science</a> <br>
+              <a href="#mds">Master of Dental Surgery</a> <br>
+              <a href="#md">Doctor of Medicine</a> <br>
+              <a href="#mba">Master of Business Adminstration</a>
 
+            </div>
+          </li>
+          <li id="be">
+            <div>
+              <time>BE / B-Tech</time> 
+              <a href="#csit">Computer Science</a> <br>
+              <a href="#csit">Information Technology</a> <br>
+              <a href="#elex">Electronics</a> <br>
+              <a href="#extc">Electronics and Telecomm</a>
+
+            </div>
+          </li>
+
+          <li id="mbbs">
+            <div>
+              <time>MBBS </time> 
+            </div>
+          </li>
+
+          <li id="bcom">
+            <div>
+              <time>Bcom</time> 
+              <a href="#mba">Master of Business Administration</a> <br>
+              <a href="#llb-c">Bachelor of Legislative Law</a> <br>
+              <a href="#ca">Chartered Accountant</a> <br>
+              <a href="bed-c">B-Ed</a>
+
+            </div>
+          </li>
+          <li id="bba">
+            <div>
+              <time>BBA</time> 
+              <a href="">MBA</a>
+            </div>
+          </li>
+          <li id="ba">
+            <div>
+              <time>Bacchelor of Arts</time> 
+              <a href="#llb-a">Bachelor of Legislative Law</a> <br>
+              <a href="#ma">Masters of Art</a> <br>
+              <a href="#med-a">M-Ed</a> <br>
+              <a href="#mba-a">Master of Business Administration</a>
+              
+            </div>
+          </li>
+        </ul>
+        
+      </section>
+      
 
       <script src="{% static 'js/roadmap.js' %}"></script>
-      
+{% block footer %}{% endblock %}      
 {% endblock %}
-{% block script %}{% endblock %}
